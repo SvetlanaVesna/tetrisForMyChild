@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 100svh ;
+    background: linear-gradient(90deg  , #395492 , #0099c0, #3dd5a8);
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-gap: 10px;
+    grid-template-rows: repeat(20, auto);
+    padding: 0.6vh;
+    gap: 0.3vh;
+    borer-radius: 0.5vh;
+    background-color: rgba(1,8,89,0.5);
+}
+.grid>div {
+    --cell-size: min(4.5vh, 7.5vw);
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: rgba(1,8,89,0.5);
+    border-radius: 0.3vh;
+    background-color: rgba(126, 150, 221, 0.2);
+}
+
+.grid>div.ghost{
+    background-color: rgba(255,255,255,0.2);
+}
+.grid>div.I {
+  background-color: #6be1ec;
+}
+.grid>div.O {
+  background-color: #5eb0f3;
+}
+.grid>div.T {
+  background-color: #f2c35b;
+}
+.grid>div.S {
+  background-color: #f7e562;
+}
+.grid>div.Z {
+  background-color: #6be1ec;
+}
+.grid>div.J {
+  background-color: #de5c6b;
+}
+.grid>div.L {
+  background-color: #b276f3;
+}
+
+.grid>div.I,
+.grid>div.O,
+.grid>div.T,
+.grid>div.S,
+.grid>div.Z,
+.grid>div.J,
+.grid>div.L {
+.grid>div.ghost {
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5),
+              inset -2px -2px 5px rgba(0, 0, 89, 0.5);
+}
